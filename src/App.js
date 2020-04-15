@@ -27,7 +27,7 @@ class App extends Component {
           <Route exact path='/news' component={News}/>
           <Route exact path='/details' component={Details}/>
           <Route exact path='/contacts' component={Contacts}/>
-          <Route exact path='/not-found-page' component={NotFoundPage}/>
+          <Route component='/not-found-page' component={NotFoundPage}/>
         </Switch>
         <Footer />
       </div>

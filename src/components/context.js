@@ -15,7 +15,7 @@ class InfoProvider extends Component {
   }
 
   getItem = id => {
-    const item = this.state.info(item => item.id ===id);
+    const item = this.state.info.find(item => item.id ===id);
     return item
   }
 
