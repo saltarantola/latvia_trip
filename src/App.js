@@ -1,26 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './components/layouts/Navbar';
+import Footer from './components/layouts/Footer';
+// React Router Import
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
+// Import Pages
+import Home from './components/pages/Home';
+import News from './components/pages/News';
+import Contacts from './components/pages/Contacts';
+import Details from './components/pages/Details';
+import NotFoundPage from './components/pages/NotFoundPage';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+
+
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+      <div>
+        <Navbar />
+        <Switch>
+          <Route exact path='/home' component={Home}/>
+          <Route exact path='/news' component={News}/>
+          <Route exact path='/details' component={Details}/>
+          <Route exact path='/contacts' component={Contacts}/>
+          <Route exact path='/not-found-page' component={NotFoundPage}/>
+        </Switch>
+        <Footer />
+      </div>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;
