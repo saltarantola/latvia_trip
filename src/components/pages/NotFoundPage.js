@@ -15,7 +15,7 @@ import styled from 'styled-components';
               Sorry, an error occured. The page cannot be found.
             </div>
             <div className='error-actions'>
-              <Link className='btn btn-outline-primary btn-lg'>
+              <Link to="/home" className='btn btn-outline-primary btn-lg'>
                 <i className=' fas fa-home'/>&nbsp; Back to Main page!
               </Link>
               <Link className='btn btn-outline-secondary btn-lg'>
