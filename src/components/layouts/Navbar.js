@@ -21,29 +21,19 @@ function Navbar() {
               </i> <span class="sr-only">(current)</span></Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link  text-white text-uppercase ml-5" to="/News">News
+          <Link className="nav-link  text-white text-uppercase ml-5" to="/News">To Do List
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link  text-white text-uppercase ml-5" to="/Contacts">Contact Us</Link>
+          <Link className="nav-link  text-white text-uppercase ml-5" to="/Contacts">Restaurants</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link  text-white text-uppercase ml-5" to="/Details">Details</Link>
-        </li>
-        <li className="nav-item dropdown">
-          <Link className="nav-link dropdown-toggle text-white text-uppercase ml-5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </Link>
-          <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a className="dropdown-item" href="#">Action</a>
-            <a className="dropdown-item" href="#">Another action</a>
-            <div className="dropdown-divider"></div>
-            <a className="dropdown-item" href="#">Something else here</a>
-          </div>
+          <Link className="nav-link  text-white text-uppercase ml-5" to="/ApartmentSearch">Apartment Search</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <Link className="nav-link  text-white text-uppercase ml-5" to="/CurrencyCalculator">Currency Calculator</Link>
         </li>
+        
       </ul>
       <form className="form-inline my-2 my-lg-0">
         <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>

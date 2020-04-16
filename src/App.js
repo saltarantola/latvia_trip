@@ -9,8 +9,11 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import Home from './components/pages/Home';
 import News from './components/pages/News';
 import Contacts from './components/pages/Contacts';
-import Details from './components/pages/Details';
+import CurrencyCalculator from './components/pages/CurrencyCalculator';
 import NotFoundPage from './components/pages/NotFoundPage';
+import ApartmentSearch from './components/pages/ApartmentSearch';
+// new currency page addition
+
 
 
 
@@ -23,12 +26,15 @@ class App extends Component {
       <div>
         <Navbar />
         <Switch>
+        <Route exact path='/' component={Home}/>
           <Route exact path='/home' component={Home}/>
           <Route exact path='/news' component={News}/>
-          <Route exact path='/details' component={Details}/>
+          <Route exact path='/CurrencyCalculator' component={CurrencyCalculator}/>
           <Route exact path='/contacts' component={Contacts}/>
+          <Route exact path='/ApartmentSearch' component={ApartmentSearch}/>
           <Route component='/not-found-page' component={NotFoundPage}/>
         </Switch>
+        
         <Footer />
       </div>
       </BrowserRouter>

@@ -4,6 +4,7 @@
     --mainLightGrey: rgba(172,172,172);
     --mainWhite: #fff;
     --mainBlue: #007bff;
+    background-image: "https://wallpapercave.com/wp/wp2168825.jpg"
 }
 
 .navbar-toggler:focus {
@@ -13,3 +14,11 @@
 .navbar-toggler {
     border:none;
 }
+
+
+.jumbotron{
+    background-image: url(https://wallpapercave.com/wp/wp2168825.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+   }

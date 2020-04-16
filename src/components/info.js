@@ -29,7 +29,7 @@ class info extends Component {
       <p className='card-text'>{headerText}</p>
       <Link
       onClick={() => value.handleDetail(id)}
-      to="/Details"
+      to="/CurrencyCalculator"
       className='btn btn-outline-primary text-uppercase'>
 
       More Info

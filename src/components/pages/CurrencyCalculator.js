@@ -6,7 +6,7 @@ import Reviews from '../Reviews'
 
 
 
- class Details extends Component {
+ class CurrencyCalculator extends Component {
    render() {
     return (
     <InfoConsumer>
@@ -102,7 +102,7 @@ import Reviews from '../Reviews'
 }
 }
 
-export default Details;
+export default CurrencyCalculator;
 
 
 const HeaderDetails = styled.header`
